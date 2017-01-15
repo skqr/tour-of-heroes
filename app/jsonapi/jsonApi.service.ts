@@ -149,7 +149,7 @@ export class ResourceDbService {
     private resModels: {[resType: string]: {[id: string]: JsonApiResModel}} = {};
 
     public addResource(resType: string, resModel: JsonApiResModel) {
-        if (resType == "assets") resType = "computer";  // TODO: Unificar los tipos.
+        // if (resType == "assets") resType = "computer";  // TODO: Unificar los tipos.
 
         if (!(resType in this.resModels)) this.resModels[resType] = {};
 
@@ -157,13 +157,13 @@ export class ResourceDbService {
     }
 
     public hasResource(resType: string, id: string): any {
-        if (resType == "assets") resType = "computer";  // TODO: Unificar los tipos.
+        // if (resType == "assets") resType = "computer";  // TODO: Unificar los tipos.
 
         return resType in this.resModels && id in this.resModels[resType];
     }
 
     public getResource(resType: string, id: string): any {
-        if (resType == "assets") resType = "computer";  // TODO: Unificar los tipos.
+        // if (resType == "assets") resType = "computer";  // TODO: Unificar los tipos.
 
         if (this.hasResource(resType, id)) {
             return this.resModels[resType][id];

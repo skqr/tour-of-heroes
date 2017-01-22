@@ -1,7 +1,7 @@
 import {Injectable} from '@angular/core';
 import {Headers, Http} from '@angular/http';
 import 'rxjs/add/operator/toPromise';
-import {Environment} from '../env';
+import {Environment} from '../env.service';
 // import {JsonApiDoc, JsonApiResObj, JsonApiRelObj, JsonApiResModel} from '../models/jsonApi';
 import {JsonApiDoc, JsonApiResObj, JsonApiRelObj, JsonApiResModel} from './jsonApi';
 import _ = require('lodash');

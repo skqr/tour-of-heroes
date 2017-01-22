@@ -49,6 +49,7 @@
     "protractor": "~4.0.14",
     "rimraf": "^2.5.4",
     "@types/node": "^6.0.46",
+    "@types/lodash": "^4.14.50",
     "@types/jasmine": "^2.5.36"
   },
   "repository": {}

@@ -1,9 +1,10 @@
 $script = <<SCRIPT
 echo I am provisioning...
 date > /etc/vagrant_provisioned_at
-apt-get update
-apt-get install git zsh curl vim htop
-apt-get install nodejs npm
+apt-get -y update
+apt-get -y install git zsh curl vim htop
+apt-get -y install nodejs npm
+ln -s /usr/bin/nodejs /usr/bin/node
 sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 npm install --no-bin-links
 npm install -g typescript concurrently lite-server

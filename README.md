@@ -1,3 +1,5 @@
+[SKQR] test - remove when possible <;o)
+
 # Angular QuickStart Source
 [![Build Status][travis-badge]][travis-badge-url]
 

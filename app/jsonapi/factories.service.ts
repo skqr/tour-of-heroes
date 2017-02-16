@@ -18,6 +18,11 @@ class PersonResMap implements ModelResource {
     public map: ModelResMap = {
         properties: {
             name: 'name'
+        },
+        relationships: {
+            toOne: {
+                location: 'location'
+            }
         }
     };
 }

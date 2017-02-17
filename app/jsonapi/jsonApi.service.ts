@@ -187,7 +187,7 @@ export class ResourceStoreService {
     /**
      * @example
      * // For a call to /api/v1/people/4?includes=company.location,parents
-     * .getResource("person", 4, includes: [["company", "location"], ["parents"]])
+     * .getResource("person", 4, [["company", "location"], ["parents"]])
      */
     public getResource(resType: string, id: string, includes?: Array<Array<string>>): any {
         let resModel: JsonApiResModel = this.fetchResModel(resType, id);
